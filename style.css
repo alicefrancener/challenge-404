@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Space Mono", monospace;
+  --font-secondary: "Inconsolata", monospace;
+  --font-tertiary: "Montserrat", sans-serif;
+
+  --color-primary: #333333;
+  --color-secondary: #4f4f4f;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin: 40px 0 0 77px;
+}
+
+.content {
+  min-heigth: 100%;
+  margin-bottom: -50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 280px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  width: 539px;
+  margin: 0px 118px 0px 77px;
+}
+
+.container__text {
+  max-width: 100%;
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 119px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--color-primary);
+  width: 600px;
+  margin-bottom: 36px;
+}
+
+.paragraph {
+  font-size: 24px;
+  color: var(--color-secondary);
+  width: 400px;
+  margin-bottom: 64px;
+}
+
+.button {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 20px 30px 20px 30px;
+  width: 216px;
+}
+
+.footer {
+  font-family: var(--font-tertiary);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 39px;
+  height: 50px;
+}
+
+@media (max-width: 620px) {
+  .header {
+    font-size: 24px;
+    margin: 24px 0 0 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .container__image {
+    width: 80%;
+  }
+
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container__text {
+    align-items: start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading {
+    font-size: 48px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    margin-left: 20px;
+  }
+
+  .footer {
+    margin-top: -175px;
+  }
+
+}
